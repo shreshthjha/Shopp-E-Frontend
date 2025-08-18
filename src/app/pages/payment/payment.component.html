@@ -1,1 +1,9 @@
-<p>payment works!</p>
+<div class="container mt-4">
+  <h3>Payment Page</h3>
+
+  <button class="btn btn-primary" (click)="pay()">Pay Now</button>
+
+  <div *ngIf="message" class="alert alert-success mt-3">
+    {{ message }}
+  </div>
+</div>

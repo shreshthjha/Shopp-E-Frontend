@@ -7,11 +7,16 @@ import { Observable } from 'rxjs';
 })
 export class OrderService {
 
-  private baseUrl = 'http://localhost:8095/api/orders';
+  private baseUrl = 'http://localhost:8095/orders';
 
   constructor(private http: HttpClient) { }
 
   createOrder(order: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/create`, order);
   }
+
+  getOrdersByUser(userId: number) {
+  return this.http.get(`http://localhost:8095/orders/${userId}`);
+}
+
 }
