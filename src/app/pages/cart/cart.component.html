@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <h3>My Cart</h3>
+  
+  <div *ngIf="cartItems.length === 0" class="alert alert-info">
+    Cart is empty.
+  </div>
+
+  <ul *ngIf="cartItems.length > 0" class="list-group">
+    <li *ngFor="let item of cartItems" class="list-group-item">
+      Product ID: {{ item.productId }} |
+      Quantity: {{ item.quantity }}
+    </li>
+  </ul>
+  <button class="btn btn-success" (click)="checkout()">Checkout</button>
+</div>
