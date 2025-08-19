@@ -1,0 +1,67 @@
+/* ---- Register Page Styling ----*/
+
+.register-container {
+  width: 500px;               /* bigger width for desktop */
+  margin: 80px auto;          /* more top spacing & center horizontal */
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+
+.register-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 15px;
+  text-align: left;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff; /* blue button */
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-form button:hover {
+  background-color: #0062cc;
+}
+
+.message {
+  margin-top: 10px;
+  color: #e74c3c;  /* red text for error/success */
+}
+
+.register-container p {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.register-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+}
